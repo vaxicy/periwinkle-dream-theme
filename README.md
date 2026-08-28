@@ -128,9 +128,29 @@ python scripts/generate-assets.py        # icon.png + assets/icon-source.png
 python scripts/generate-screenshots.py   # 1280x800 store screenshots
 python scripts/generate-promo.py         # 440x280 and 1400x560 promo tiles
 python scripts/verify-assets.py          # size, mode, manifest, and contrast checks
+python scripts/package.py                # build the store upload zip
 ```
 
 On Windows, use the full path to your Python interpreter if `python` is not on `PATH`. Each generator asserts its own layout bounds, so a bad coordinate fails loudly instead of producing a broken image.
+
+## Packaging for the Chrome Web Store
+
+`scripts/package.py` builds `periwinkle-dream-theme-<version>.zip` with `manifest.json` at the **root** of the archive — Chrome Web Store rejects uploads where the manifest is nested inside a folder. The zip contains only the theme itself:
+
+```
+manifest.json
+README.md
+LICENSE
+store-assets/icon.png
+```
+
+Screenshots and promo tiles are **not** included, because they are uploaded separately in the store listing form rather than as part of the extension. `scripts/`, `assets/`, and `store-listing.txt` are excluded for the same reason.
+
+The script verifies its own output before reporting success: manifest v3 and version consistency, every manifest-referenced file present, `manifest.json` at the zip root, the manifest re-parsed from inside the archive, and a byte-identical copy in the projects folder two levels above the project root.
+
+```bash
+python scripts/package.py
+```
 
 ## Quality Checks
 
@@ -163,7 +183,8 @@ periwinkle-dream-theme/
 │   ├── generate-assets.py          # Icon generator
 │   ├── generate-screenshots.py     # Headless browser store screenshots
 │   ├── generate-promo.py           # Promo tile generator
-│   └── verify-assets.py            # Chrome Web Store requirement checks
+│   ├── verify-assets.py            # Chrome Web Store requirement checks
+│   └── package.py                  # Builds the store upload zip
 ├── store-assets/
 │   ├── icon.png                    # 128x128 store icon
 │   ├── periwinkle-dream-small-promo.png    # 440x280 small promo tile

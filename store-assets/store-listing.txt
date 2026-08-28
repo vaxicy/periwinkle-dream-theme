@@ -10,13 +10,13 @@ A soft periwinkle Chrome theme with dreamy lavender-blue tones for calm, comfort
 
 === Detailed Description ===
 
-Periwinkle Dream Theme gives your browser a quiet lavender-blue mood built from four pastel tones: periwinkle, soft sky blue, cloud lavender, and dream white. The frame sits in gentle periwinkle, the toolbar and active tab stay in cloud lavender, and the new tab page settles on dream white, so the whole window reads as one soft gradient instead of separate colored blocks.
+Periwinkle Dream Theme wraps Chrome in four soft pastel tones: periwinkle, soft sky blue, cloud lavender, and dream white. The frame sits in periwinkle, the toolbar and active tab stay in cloud lavender, and the new tab page settles on dream white.
 
-The palette was tuned for long sessions rather than first impressions. Active tabs are clearly brighter than inactive ones, and all text, icons, and bookmarks use a deep periwinkle ink that stays readable against the pale surfaces. Nothing is high-saturation, nothing is neon, and there are no heavy dark panels competing with the pages you actually read.
+Active tabs are clearly brighter than inactive ones, and a deep periwinkle ink keeps text and icons readable on the pale surfaces.
 
-It is a pure theme. There is no JavaScript, no background script, no content script, no analytics, and no remote code. It requests no permissions, collects no data, and never touches your browsing. The entire package is a single manifest file plus one icon.
+It is a pure theme. No JavaScript, no scripts, no analytics, no remote code, no permissions, no data collection. The package is just a manifest file plus one icon.
 
-Periwinkle Dream Theme is a good fit if you like pastel and aesthetic setups, keep a lot of tabs open, read or write for long stretches, or simply want a calm browser that stays in the background.
+Install it to bring a softer, quieter tone to every new tab.
 
 Install it to bring a softer, quieter tone to every new tab.
 
