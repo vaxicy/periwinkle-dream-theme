@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Periwinkle Dream Theme",
+  "description": "A soft periwinkle Chrome theme with dreamy lavender-blue tones designed for a calm and comfortable browsing experience.",
+  "icons": {
+    "128": "store-assets/icon.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [177, 178, 255],
+      "frame_inactive": [170, 196, 255],
+      "toolbar": [210, 218, 255],
+      "tab_text": [60, 66, 112],
+      "tab_background_text": [64, 70, 118],
+      "tab_background_text_inactive": [70, 76, 126],
+      "bookmark_text": [60, 66, 112],
+      "button_background": [177, 178, 255],
+      "toolbar_button_icon": [60, 66, 112],
+      "ntp_background": [238, 241, 255],
+      "ntp_text": [60, 66, 112],
+      "ntp_link": [90, 99, 200],
+      "omnibox_background": [238, 241, 255],
+      "omnibox_text": [60, 66, 112]
+    },
+    "tints": {
+      "buttons": [0.665, 1.0, 0.847],
+      "frame": [0.665, 1.0, 0.847],
+      "frame_inactive": [0.616, 1.0, 0.833],
+      "background_tab": [0.665, 1.0, 0.847]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}
